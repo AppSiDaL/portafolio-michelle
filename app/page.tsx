@@ -24,10 +24,10 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import ProjectImageSlider from "@/components/ProjectImgeSlider";
-import { useRouter } from 'next/navigation'
+import { useRouter } from "next/navigation";
 
 export default function CreativePortfolio() {
-    const router = useRouter()
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");
   const { scrollYProgress } = useScroll();
@@ -43,9 +43,9 @@ export default function CreativePortfolio() {
   ];
 
   const skills = [
-    { name: "Blender", level: 95 },
-    { name: "Photoshop", level: 90 },
-    { name: "Krita", level: 80 },
+    { name: "Blender", level: 70 },
+    { name: "Photoshop", level: 70 },
+    { name: "Krita", level: 60 },
   ];
 
   const projects = [
@@ -295,7 +295,7 @@ export default function CreativePortfolio() {
                 variant="outline"
                 size="lg"
                 className="border-pink-300 text-pink-600 hover:bg-pink-50 px-8 py-3 rounded-full w-[200px] h-[50px] text-xl"
-                onClick={() => router.push('/cv')}
+                onClick={() => router.push("/cv")}
               >
                 <Download className="mr-2 w-4 h-4" />
                 Descargar CV
